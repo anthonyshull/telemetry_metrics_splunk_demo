@@ -1,7 +1,5 @@
 # TelemetryMetricsSplunkDemo
 
-## Setup
-
 Clone this repo and start the server:
 
 ```
@@ -22,6 +20,7 @@ ok
 ```
 
 By default, the application will send metrics to itself.
+
 If you want to test the demo against a real Splunk index, you can set the URL and Token in `config/config.exs`.
 
 ## Adding a metric
