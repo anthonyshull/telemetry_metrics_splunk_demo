@@ -113,7 +113,7 @@ Uncomment these lines in `lib/telemetry_metrics_demo/application.ex`:
   :telemetry_poller, measurements: [
     {TelemetryMetricsSplunkDemo.GetCounter, :dispatch_stats, []}
   ],
-  period: :timer.seconds(60),
+  period: :timer.seconds(10),
   init_delay: :timer.seconds(5)
 }
 ```
