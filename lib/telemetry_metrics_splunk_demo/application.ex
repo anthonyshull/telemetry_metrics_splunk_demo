@@ -25,7 +25,13 @@ defmodule TelemetryMetricsSplunkDemo.Application do
       #   ]
       # },
       # {TelemetryMetricsSplunkDemo.GetCounter, 0},
-      # {:telemetry_poller, measurements: [{TelemetryMetricsSplunkDemo.GetCounter, :dispatch_stats, []}], period: :timer.seconds(60), init_delay: :timer.seconds(5)},
+      # {
+      #   :telemetry_poller, measurements: [
+      #     {TelemetryMetricsSplunkDemo.GetCounter, :dispatch_stats, []}
+      #   ],
+      #   period: :timer.seconds(10),
+      #   init_delay: :timer.seconds(5)
+      # }
     ]
 
     Logger.info("Starting the demo server on port #{@port}")
