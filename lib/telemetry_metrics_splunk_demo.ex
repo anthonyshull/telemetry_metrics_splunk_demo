@@ -13,7 +13,7 @@ defmodule TelemetryMetricsSplunkDemo do
 
     # :telemetry.execute([:requests], %{get: 1})
 
-    TelemetryMetricsSplunkDemo.GetCounter.increment()
+    # TelemetryMetricsSplunkDemo.GetCounter.increment()
 
     send_resp(conn, 200, "ok\n")
   end
