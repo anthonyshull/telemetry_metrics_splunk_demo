@@ -7,11 +7,13 @@ defmodule TelemetryMetricsSplunkDemo do
   plug :dispatch
 
   get "/" do
+    fetch_query_params(conn)
+
     Logger.debug("#{__MODULE__} GET /")
 
     # :telemetry.execute([:requests], %{get: 1})
 
-    # TelemetryMetricsSplunkDemo.GetCounter.increment()
+    TelemetryMetricsSplunkDemo.GetCounter.increment()
 
     send_resp(conn, 200, "ok\n")
   end

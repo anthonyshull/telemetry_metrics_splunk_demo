@@ -24,7 +24,7 @@ defmodule TelemetryMetricsSplunkDemo.MixProject do
     [
       {:jason, "1.4.1"},
       {:plug_cowboy, "2.7.1"},
-      {:telemetry_metrics_splunk, git: "https://github.com/anthonyshull/telemetry_metrics_splunk.git"},
+      {:telemetry_metrics_splunk, "0.0.6-alpha"},
       {:telemetry_poller, "1.1.0"}
     ]
   end
